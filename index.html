@@ -369,18 +369,8 @@
               type="text"
               id="Name-3"
               required=""
-            /><label for="Age">Age</label
-            ><input
-              class="w-input"
-              autofocus="true"
-              maxlength="256"
-              name="Age"
-              data-name="Age"
-              placeholder="35 years"
-              type="number"
-              id="Age"
-              required=""
-            /><label for="email">Email Address</label
+            />
+            <label for="email">Email Address</label
             ><input
               class="w-input"
               autofocus="true"
@@ -402,26 +392,25 @@
               type="tel"
               id="Phone"
               required=""
-            /><label for="FICO">What is your FICO score</label
-            ><select
-              id="FICO"
-              name="FICO"
-              data-name="FICO"
-              required=""
-              class="w-select"
-            >
-              <option value="720 and Above">720 and Above</option>
-              <option value="660 to 720">660 to 720</option>
-              <option value="600 to 660">600 to 660</option>
-              <option value="Below 600">Below 600</option></select
-            ><label for="State">State</label
-            ><input
+            /><label for="FICO">What is your FICO score?</label>
+            <div class="radio-group">
+                <input type="radio" id="above720" name="FICO" value="720 and Above" required>
+                <label for="above720"><span class="custom-radio"></span>720 and Above</label><br>
+                <input type="radio" id="660to720" name="FICO" value="660 to 720" required>
+                <label for="660to720"><span class="custom-radio"></span>660 to 720</label><br>
+                <input type="radio" id="600to660" name="FICO" value="600 to 660" required>
+                <label for="600to660"><span class="custom-radio"></span>600 to 660</label><br>
+                <input type="radio" id="below600" name="FICO" value="Below 600" required>
+                <label for="below600"><span class="custom-radio"></span>Below 600</label><br>
+            </div>
+            <label for="State">Address</label>
+            <input
               class="w-input"
               autofocus="true"
               maxlength="256"
               name="State"
               data-name="State"
-              placeholder=""
+              placeholder="Please enter your complete address."
               type="text"
               id="State"
               required=""
